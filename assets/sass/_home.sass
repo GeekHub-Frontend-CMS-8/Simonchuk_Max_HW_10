@@ -1,12 +1,50 @@
-.main
-  background: url("../img/home-bg.png") no-repeat center/cover
+.home
+  background: url("../img/home-bg (1).png") no-repeat center/cover
   padding-bottom: 300px
-
-.main-menu__list-item
-  &:hover
+  &__main-menu
+    padding-bottom: 310px
+  &__main-menu__list-item
+    &:hover
+      background-color: #74c7d5
+  &__main-menu__list-item
+    @media (max-width: 991px)
+      background-color: #808080
+  &__list-item-active
     background-color: #74c7d5
-.main-menu__list-item
-  @media (max-width: 991px)
-    background-color: #808080
-.home__list-item-active
-  background-color: #74c7d5
+  &__box
+    display: flex
+    align-items: center
+    background-color: #ffffff
+    opacity: 0.5
+    max-width: 840px
+    width: 100%
+    height: 100%
+    margin: auto
+    @media screen and (max-width: 830px)
+      flex-direction: column
+  &__block-first
+    width: 100%
+    @media screen and (max-width: 830px)
+      text-align: center
+  &__block-first--title
+    color: #74c7d5
+    font-family: Lato,sans-serif
+    font-size: 57px
+    font-weight: 300
+    line-height: 58px
+    @media screen and (max-width: 550px)
+      margin-bottom: 25px
+  &__block-second
+    width: 100%
+    @media screen and (max-width: 830px)
+      text-align: center
+  &__block-second--title
+    color: #74c7d5
+    font-family: "Lato - Black",sans-serif
+    font-size: 138px
+    font-weight: 400
+    @media screen and (max-width: 550px)
+      font-size: 90px
+
+
+
