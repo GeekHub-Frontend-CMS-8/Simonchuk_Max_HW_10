@@ -1,0 +1,85 @@
+.home
+  background: url("../img/home-bg (1).png") no-repeat center/cover
+  padding-bottom: 91px
+  &__main-menu
+    padding-bottom: 310px
+  &__main-menu__list-item
+    &:hover
+      background-color: #74c7d5
+  &__main-menu__list-item
+    @media (max-width: 991px)
+      background-color: #808080
+  &__list-item-active
+    background-color: #74c7d5
+  &__box
+    display: flex
+    align-items: center
+    background-color: #ffffff
+    opacity: 0.5
+    max-width: 840px
+    width: 100%
+    height: 100%
+    margin: 0 auto 302px
+    @media screen and (max-width: 830px)
+      flex-direction: column
+  &__block-first
+    width: 100%
+    @media screen and (max-width: 830px)
+      text-align: center
+  &__block-first--title
+    color: #74c7d5
+    font-family: Lato,sans-serif
+    font-size: 57px
+    font-weight: 300
+    line-height: 58px
+    @media screen and (max-width: 550px)
+      margin-bottom: 25px
+  &__block-second
+    width: 100%
+    @media screen and (max-width: 830px)
+      text-align: center
+  &__block-second--title
+    color: #74c7d5
+    font-family: "Lato - Black",sans-serif
+    font-size: 138px
+    font-weight: 400
+    @media screen and (max-width: 550px)
+      font-size: 90px
+  &__checkbox
+    display: flex
+    justify-content: space-between
+    max-width: 150px
+    width: 100%
+    margin:  auto
+  &__checkbox-first
+    border: 12px solid #ffffff
+    border-radius: 50%
+    background-color: #ffffff
+    opacity: 0.5
+    cursor: pointer
+  &__checkbox-main
+    border: 12px solid #74c7d5
+    border-radius: 50%
+    background-color: #74c7d5
+    cursor: pointer
+  &__slider--arrow
+    max-width: 1517px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    margin: auto
+    align-items: center
+  &__slider--arrow-left
+    background: url("../img/arrow-left.png")
+    max-width: 34px
+    width: 100%
+    height: 54px
+  &__slider--arrow-right
+    background: url("../img/arrow-right.png")
+    max-width: 34px
+    width: 100%
+    height: 54px
+
+
+
+

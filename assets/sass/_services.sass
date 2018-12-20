@@ -1,0 +1,74 @@
+.services
+  padding-bottom: 124px
+  background: url("../img/services-bg.png") no-repeat center /cover
+  &__list-item
+    &:hover
+      background: #df5c64
+  &__list-item-active
+    background: #df5c64
+  &__top-title
+    margin-bottom: 46px
+  &__middle-title
+    color: #ffffff
+    font-family: Lato,sans-serif
+    font-size: 20px
+    font-weight: 400
+    line-height: 58px
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 22px
+  &__middle-title-color
+    color: #ec9da2
+  &__paragraph
+    color: #ffcccf
+    margin-bottom: 120px
+  &__box
+    display: flex
+    justify-content: space-between
+    @media screen and (max-width: 1100px)
+      flex-direction: row
+      align-items: center
+      justify-content: space-around
+      flex-wrap: wrap
+  &__block
+    max-width: 260px
+    width: 100%
+    height: 400px
+    background-color: #c8535a
+    padding-top: 49px
+    @media screen and (max-width: 1100px)
+      margin-bottom: 30px
+    @media screen and (max-width: 560px)
+      max-width: 440px
+      height: 410px
+  &__picture
+    max-width: 140px
+    width: 100%
+    height: 140px
+    margin: 0 auto 34px
+  @each $img in picture-first,picture-second,picture-third,picture-fourth
+    &__#{$img}-icon
+      background-image: url('../img/#{$img}.png')
+  &__title
+    color: #ffffff
+    font-family: Lato,sans-serif
+    font-size: 30px
+    font-weight: 300
+    line-height: 58px
+    margin-bottom: 51px
+    text-align: center
+  &__text
+    color: #fefefe
+    font-family: Lato,sans-serif
+    font-size: 14px
+    font-weight: 400
+    line-height: 20px
+    text-align: center
+    max-width: 209px
+    width: 100%
+    margin: 0 auto
+    @media screen and (max-width: 560px)
+      max-width: 339px
+      font-size: 18px
+
+
